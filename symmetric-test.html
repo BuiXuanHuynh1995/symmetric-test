@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(arr) {
+        var n = arr.length;
+        for (let i = 0; i < (n / 2); i++) {
+            if (arr[i] != arr[n - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    var arr = prompt("Input");
+    result = isPalindrome(arr);
+    document.write(result);
+</script>
+</body>
+</html>
